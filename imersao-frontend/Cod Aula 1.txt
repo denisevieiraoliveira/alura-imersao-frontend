@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="" alt="">
+                    <img src="./assets/logo-spotify.png" alt="Logo do spotify">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home">
+                                <img src="" alt="">
+                            </span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search">
+                                <img src="" alt="">
+                            </span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="sidebar__navigation__biblioteca__links">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home">
+                                <img src="" alt="">
+                            </span>
+                            <span>A tua Biblioteca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa">
+                                <img src="" alt="">
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__navigation__biblioteca">
+                <h1>Cria a tua primeira playlist</h1>
+                <p>É fácil, nós ajudamos</p>
+                <button>Criar playlist</button>
+            </div>
+            <div class="sidebar__navigation__biblioteca">
+                <h1>Vamos lá encontrar alguns podcasts para seguires</h1>
+                <p>Vamos atualizar-te sobre os novos episódios</p>
+                <button>Procurar podcasts</button>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+
+
+body {
+    background-color: #000000;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:12px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar__navigation{
+    background-color: var(--cor-primaria);
+    border-radius:8px;
+}
+
+.logo{
+    background: var(--cor-primaria);
+    display:flex;
+    border-radius:8px ;
+    padding:16px 0 0 16px;
+}
+
+.sidebar__navigation .logo img{
+    width:80px;
+}
+
+.sidebar nav ul{
+    /*margin-top: 20px;*/
+    padding: 10px 20px 10px 20px;
+}
+
+.sidebar ul li{
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__navigation__biblioteca {
+    background-color: var(--cor-terciaria);
+    border-radius:8px;
+    margin: 0 10px 10px 10px;
+    padding: 16px 0 16px 16px;
+}
+
+.sidebar__navigation__biblioteca h1 {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar__navigation__biblioteca p {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px 0;
+}
+
+.sidebar__navigation__biblioteca button {
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 8px;
+    padding: 8px 15px;
+}
+
+.sidebar__navigation__biblioteca__links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
